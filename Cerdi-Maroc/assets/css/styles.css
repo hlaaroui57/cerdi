@@ -1,0 +1,40 @@
+:root{
+  --red:#D32F2F;
+  --black:#1C1C1C;
+  --dark:#111;
+  --gray:#6D6D6D;
+  --light:#F5F5F5;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Roboto, Arial, sans-serif;color:#222;background:#fff}
+h1,h2,h3{font-family:Montserrat, Arial, sans-serif;margin:0 0 10px}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:auto;padding:0 20px}
+
+.nav{background:var(--black);color:#fff;position:sticky;top:0;z-index:10}
+.nav .container{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Montserrat;font-weight:700}
+.logo-badge{width:36px;height:36px;border:2px solid var(--red);display:grid;place-items:center;color:var(--red);font-weight:700}
+.menu a{margin:0 10px;color:#ddd}
+.menu a:hover{color:#fff}
+
+.btn{display:inline-block;padding:10px 16px;border-radius:4px}
+.btn-primary{background:var(--red);color:#fff}
+.btn-outline{border:1px solid var(--red);color:var(--red)}
+
+.hero{background:linear-gradient(90deg,#111,#333);color:#fff;padding:80px 0}
+.hero h1{font-size:42px}
+.hero p{color:#ddd;margin:15px 0 25px}
+
+.section{padding:60px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid #eee;padding:20px;border-radius:6px;background:#fff}
+.card h3{color:var(--black)}
+
+.footer{background:#111;color:#aaa;padding:30px 0;margin-top:40px}
+.footer a{color:#ccc;margin-right:15px}
+
+@media(max-width:900px){
+  .cards{grid-template-columns:1fr}
+  .hero h1{font-size:28px}
+}
